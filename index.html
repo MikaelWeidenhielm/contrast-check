@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contrasts grid</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="content" data-theme="light">
+        <div class="grid" id="container">
+        <div class="header">
+          <div class="settings">
+            <button onclick="toggleCards()">Toggle approved combinations</button>
+            <button onclick="toggleTheme()">Change theme</button>
+          </div>
+          <p id="info" class="info"></p>
+        </div>
+        <div id="tokenColumn" class="tokenColumn"></div>
+        <div id="tokenRow" class="tokenRow"></div>
+        <div id="cardContainer" class="cardContainer"></div>
+        </div>
+    
+      <script src="extractCSSVariables.js"></script>
+      <script src="calculateContrast.js"></script>
+      <script src="index.js"></script>
+  </body>
+</html>
